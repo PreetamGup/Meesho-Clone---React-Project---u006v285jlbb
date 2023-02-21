@@ -1,9 +1,26 @@
 import React from 'react';
 import {FaStar} from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom';
 import './ProductCard.css'
+import { useContext } from 'react';
+import Context from '../../context/Context';
+
+
 const ProductCard = ({ item }) => {
+    const value = useContext(Context)
+    
+    const navigate= useNavigate();
+
+    function goToProductPage(id){
+        value.setProductId(id);
+        //   console.log(personData)
+        // console.log(value.username)
+
+        navigate("/product")
+    }
+
     return (
-        <div className='pcard' key={item.id} id={item.id}>
+        <div className='pcard' key={item.id}  onClick={()=> goToProductPage(item.id)}>
             <div className='pimage'>
                 <img src={item.image} alt="" />
             </div>

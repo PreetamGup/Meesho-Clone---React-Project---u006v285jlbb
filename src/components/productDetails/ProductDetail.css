@@ -2,4 +2,78 @@
     position: absolute;
     top: 130px;
     left: 60px;
+    width: 70%;
+    height: 600px;
+    display: flex;
+    
+}
+
+.pSize .freeSize{
+    background-color: pink;
+    padding: 5px;
+    color: rgb(244, 51, 151);
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid rgb(244, 51, 151);
+    font-weight: 400;
+}
+
+.productPic{
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productPic img{
+    width: 400px;
+    height: 500px;
+}
+
+.productPic button{
+    background-color: rgb(244, 51, 151);
+    color: white;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: none;
+}
+
+
+.productPic button:hover{
+    /* box-shadow: ; */
+    background-color: rgb(56, 56, 244);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+
+.pDetailsAndFeature{
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pDetailsAndFeature .ptitleAndPrice {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.pDetailsAndFeature .pSize{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pDetailsAndFeature .pDetails{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pTitle{
+    color: grey;
+    /* font-size: 16px; */
 }
