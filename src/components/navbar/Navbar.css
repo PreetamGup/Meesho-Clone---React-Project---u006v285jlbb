@@ -97,10 +97,36 @@ hr{
     padding: 0 10px;
 }
 
+.profile:hover{
+    cursor: pointer;
+}
+
+.custCart:hover{
+    cursor: pointer;
+}
 
 
 .catNav{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+}
+
+.personMenu{
+    top: 60px;
+    position: absolute;
+    right: 70px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+
+#logout:hover{
+    cursor: pointer;
+    color: blue;
 }

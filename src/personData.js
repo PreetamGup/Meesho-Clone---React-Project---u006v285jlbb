@@ -1,13 +1,13 @@
 const database = {
   jayesh: {
     id: 1,
-    username: jayesh,
+    username: "jayesh",
     cart: [],
   },
 
   guest: {
     id: 2,
-    username: guest,
+    username: "guest",
     cart: [],
   },
 };

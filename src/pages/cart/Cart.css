@@ -1,0 +1,106 @@
+.cartContainer{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+
+.eachProductCart{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    width: 800px;
+}
+
+.eachProductCart .pSingleImg{
+    width: 200px;
+    height: 200px;
+}
+
+.eachProductCart h2{
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.quantity {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.priceContainer{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.quantity button{
+    width: 20px;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.checkOut{
+    background-color: rgb(246, 189, 85);
+    padding: 5px;
+}
+
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.paymentPage input{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#Address{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.expiryMonth select{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.completeBtn{
+    background-color: greenyellow;
+    padding: 5px;   
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.completeBtn:hover{
+    background-color: rgb(70, 70, 240);
+    border: 1px solid black;
+    color: white;
+}
+
+.cancelBtn{
+    background-color: rgb(243, 78, 78);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cancelBtn:hover{
+    background-color: rgb(70, 70, 240);
+    border: 1px solid black;
+    color: white;
+}

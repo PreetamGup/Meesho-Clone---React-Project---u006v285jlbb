@@ -4,9 +4,29 @@ import Context from '../../context/Context';
 // import Product from '../product/Product';
 import {FaStar} from 'react-icons/fa'
 
+
+
+
 const ProductDetail = () => {
   // const [singleData, setSingleData] = useState({});
   const value= useContext(Context);
+
+
+  function addToCart(item1){
+    const personCart= JSON.parse(sessionStorage.getItem("personData"))
+    const cartDetail= {
+      pImg : item1.image,
+      pTitle : item1.title,
+      pPrice : item1.price,
+      pTprice : item1.price,
+      pQuantity : 1,
+    }
+
+    personCart.cart.push(cartDetail);
+
+    sessionStorage.setItem("personData",JSON.stringify(personCart ))
+    
+  }
 
 
   return (
@@ -15,10 +35,10 @@ const ProductDetail = () => {
         value.allProduct.filter((item) => (item.id == value.productId))
           .map((item1 => {
             return (
-              <>
+              <React.Fragment key={item1.id}>
                 <div className="productPic">
                   <img src={item1.image} alt="" />
-                  <button >Add to Cart </button>
+                  <button onClick={addToCart(item1)} >Add to Cart </button>
                 </div>
 
                 <div className="pDetailsAndFeature">
@@ -42,16 +62,14 @@ const ProductDetail = () => {
                     </p>
 
                   </div>
+                 
                 </div>       
 
-              </>)
+              </React.Fragment>)
           }))
 
       }
-      
-      
-      
-    
+          
     </div>
   );
 }

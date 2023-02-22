@@ -37,7 +37,7 @@ const Login = ({ setIsLoggedIn, setUsername }) => {
 
                 </div>
                 <div className="button-container">
-                    <button type="submit" onClick={handleSubmit}>Submit</button>
+                    <button type="submit" onClick={handleSubmit}>Login</button>
                 </div>
             </div>
 

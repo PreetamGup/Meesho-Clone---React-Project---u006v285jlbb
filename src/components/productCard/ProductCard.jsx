@@ -13,8 +13,7 @@ const ProductCard = ({ item }) => {
 
     function goToProductPage(id){
         value.setProductId(id);
-        //   console.log(personData)
-        // console.log(value.username)
+        
 
         navigate("/product")
     }

@@ -7,6 +7,10 @@ import Productdetail from './productDetails/ProductDetail';
 import Context from '../context/Context';
 import { loginDetails } from '../Login Detail';
 import Login from '../pages/Login/Login';
+import Cart from '../pages/cart/Cart';
+import { database } from '../personData';
+import OrderComplete from '../pages/orderComplete/OrderComplete';
+
 
 
 
@@ -40,8 +44,10 @@ const App = () => {
 
     
   sessionStorage.setItem("loginDetails", JSON.stringify(loginDetails))
+ 
+  sessionStorage.setItem("personData", JSON.stringify(database[`${username}`]))
     
-  }, []);
+  }, [username]);
 
  
   return (
@@ -49,13 +55,15 @@ const App = () => {
 
       {!isLoggedIn ? <Login setIsLoggedIn={setIsLoggedIn} setUsername={setUsername}/> :
       <BrowserRouter>
-        <Navbar setSearch={setSearch} search={search}/>
+        <Navbar setSearch={setSearch} search={search} username={username} setIsLoggedIn={setIsLoggedIn}/>
         {/* <Product allProduct={allProduct} search={search}/> */}
 
-        <Context.Provider value={{allProduct,search, singleData, setSingleData, productId, setProductId, username}} >
+        <Context.Provider value={{allProduct,search, singleData, setSingleData, productId, setProductId, username, database}} >
           <Routes>
             <Route exact path='/' element={<Product  />}/>
             <Route  path='/product' element={<Productdetail/>}/>
+            <Route path='/cart' element={<Cart/>}/>
+            <Route path='/ordercomplete' element={<OrderComplete/>}/>
           </Routes>
         </Context.Provider>
 
