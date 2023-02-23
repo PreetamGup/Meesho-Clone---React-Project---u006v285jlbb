@@ -3,6 +3,9 @@ import './ProductDetail.css'
 import Context from '../../context/Context';
 // import Product from '../product/Product';
 import {FaStar} from 'react-icons/fa'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -25,7 +28,15 @@ const ProductDetail = () => {
     personCart.cart.push(cartDetail);
 
     sessionStorage.setItem("personData",JSON.stringify(personCart ))
+
     
+      showNotification()
+  
+    
+  }
+
+  const showNotification=()=>{
+    toast("Product is added");
   }
 
 
@@ -38,7 +49,8 @@ const ProductDetail = () => {
               <React.Fragment key={item1.id}>
                 <div className="productPic">
                   <img src={item1.image} alt="" />
-                  <button onClick={addToCart(item1)} >Add to Cart </button>
+                  <button onClick={()=>addToCart(item1)} >Add to Cart </button>
+                  
                 </div>
 
                 <div className="pDetailsAndFeature">
@@ -69,7 +81,20 @@ const ProductDetail = () => {
           }))
 
       }
-          
+      
+      <ToastContainer
+            position="top-center"
+            autoClose={500}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            />
+
     </div>
   );
 }

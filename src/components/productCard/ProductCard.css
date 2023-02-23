@@ -10,7 +10,7 @@
     justify-content: space-evenly;
     /* flex: 20%; */
     padding: 5px;
-   
+    cursor: pointer;
 }
 
 .pcard:hover{

@@ -59,9 +59,12 @@
 
 .cardInfo{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
     
 }
+
+
 
 .paymentPage input{
     border: 1px solid black;
@@ -103,4 +106,8 @@
     background-color: rgb(70, 70, 240);
     border: 1px solid black;
     color: white;
+}
+
+.cvv{
+    width: 50px;
 }
