@@ -24,6 +24,8 @@ const ProductDetail = () => {
       pTprice : item1.price,
       pQuantity : 1,
     }
+   
+    
 
     personCart.cart.push(cartDetail);
 
@@ -31,6 +33,7 @@ const ProductDetail = () => {
 
     
       showNotification()
+       
   
     
   }
@@ -39,8 +42,8 @@ const ProductDetail = () => {
     toast("Product is added");
   }
 
-
   return (
+   
     <div className='productDetails' >
       {
         value.allProduct.filter((item) => (item.id == value.productId))
@@ -81,6 +84,8 @@ const ProductDetail = () => {
           }))
 
       }
+
+     
       
       <ToastContainer
             position="top-center"
@@ -95,7 +100,8 @@ const ProductDetail = () => {
             theme="dark"
             />
 
-    </div>
+      </div>
+     
   );
 }
 

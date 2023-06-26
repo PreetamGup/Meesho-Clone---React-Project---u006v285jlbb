@@ -1,34 +1,93 @@
 .loginPage{
-    background-color: rgb(245, 194, 203);
+    background-color:rgb(252 237 235);
     display:flex;
     height: 100vh;
     align-items: center;
-    /* justify-content: space-evenly; */
     flex-direction: column;
+    width: 100vw;
+   
+    overflow-y: scroll;
 }
 
 .loginPage h1{
-    color: rgb(244, 51, 151);
+    color: rgb(253, 234, 241, 1);
     font-size: 200px;
+  
 }
 
 
 .loginForm{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     margin: 20px;
-    border: 2px solid black;
-    padding: 10px;
-    gap:15px;
-    border-radius: 20px;
-    background-color: rgb(243, 147, 201);
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
     font-size: 20px;
+    margin-top: 112px;
+    height: 100vh;
+    width: 433px;
+    
+   
 }
 
+.loginForm img{
+    width: inherit;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .button-container button{
     padding: 8px;
     border-radius: 5px;
-    background-color: rgb(244, 51, 151);
+    background-color: rgb(159, 32, 137);
+    width: 170px;
     color: white;
     border:none;
+}
+
+.loginFooter{
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 25px;
+    /* font-weight: 550; */
+}
+
+.colorPink{
+    color: rgb(171, 23, 139);
+}
+
+.loginNavbar{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 70px;
+    padding: 0px 100px;
+    background: white;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoSearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.downloadSupplier{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
 }

@@ -1,12 +1,11 @@
 #productMain{
     top: 130px;
-    left: 60px;
-    width: 90%;
+    margin:20px 70px;
+    /* width: 100vw; */
     height: max-content;
     /* background-color: blue; */
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-   
       
 }

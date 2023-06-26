@@ -4,7 +4,9 @@
     width: 90%;
     background: white;
     top: 0px;
-    left: 60px;
+    width: 100vw;
+    /* left: 60px; */
+    
 }
 
 .mainNav{
@@ -19,6 +21,7 @@
     align-items: center;
     gap:20px;
     padding: 10px;
+    padding-left: 90px;
 }
 
 .searchbar{
@@ -31,6 +34,8 @@
     border: 1px solid rgb(153, 153, 153);
     border-radius: 4px;
 }
+
+
 
 hr{
     color: rgb(238, 238, 238);
@@ -63,6 +68,7 @@ hr{
 .containerNavRight{
     display: flex;
     align-items: center;
+    padding-right: 90px; ;
     /* gap:10px; */
 
 }
@@ -86,7 +92,7 @@ hr{
     align-items: center;
     justify-content: space-around;
     width: 150px;
-    
+   
 }
 
 .profile , .custCart{
@@ -109,13 +115,13 @@ hr{
 .catNav{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    margin: 15px 90px;
 }
 
 .personMenu{
-    top: 60px;
     position: absolute;
-    right: 70px;
+    top: 60px;
+    right: 150px;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
